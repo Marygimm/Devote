@@ -13,6 +13,7 @@ struct ContentView: View {
     
     @State var task: String = ""
     @State private var showNewTaskItem: Bool = false
+    @AppStorage("isDarkMode") private var isDarkMode: Bool = false
     
     //MARK: - Fetching data
     @Environment(\.managedObjectContext) private var viewContext
@@ -23,7 +24,7 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
     
     //MARK: - Functions
-
+    
     
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
@@ -46,6 +47,36 @@ struct ContentView: View {
                 //MARK: - MAIN VIEW
                 VStack {
                     //MARK: - Header
+                    HStack(spacing: 10) {
+                        //Title
+                        Text("Devote")
+                            .font(.system(.largeTitle, design: .rounded))
+                            .fontWeight(.heavy)
+                            .padding(.leading, 4)
+                        
+                        Spacer()
+                        
+                        //Edit button
+                        EditButton()
+                            .font(.system(size: 16, weight: .semibold, design: .rounded))
+                            .padding(.horizontal, 10)
+                            .frame(minWidth: 70, minHeight: 24)
+                            .background(Capsule().stroke(Color.white, lineWidth: 2))
+                        
+                        //Appearence
+                        
+                        Button {
+                            isDarkMode.toggle()
+                        } label: {
+                            Image(systemName: isDarkMode ? "moon.circle.fill" : "moon.circle")
+                                .resizable()
+                                .frame(width: 24, height: 24)
+                                .font(.system(.title, design: .rounded))
+                        }
+
+                    } //HStack
+                    .padding()
+                    .foregroundColor(.white)
                     Spacer(minLength: 80)
                     
                     //MARK: - New Task Button
@@ -62,7 +93,7 @@ struct ContentView: View {
                     .background(
                         LinearGradient(gradient: Gradient(colors: [Color.pink, Color.blue]), startPoint: .leading, endPoint: .trailing).clipShape(Capsule()))
                     .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 8, x: 0.0, y: 4.0)
-                        //MARK: - Tasks
+                    //MARK: - Tasks
                     List {
                         ForEach(items) { item in
                             NavigationLink {
@@ -112,14 +143,9 @@ struct ContentView: View {
             })
             .navigationTitle("Daily Tasks")
             .navigationBarTitleDisplayMode(.large)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                
-            } //:TOOLBAR
+            .navigationBarHidden(true)
             .background(
-            BackgroundImageView())
+                BackgroundImageView())
             .background(backgroundGradient.ignoresSafeArea())
         }//: Navigation
         .navigationViewStyle(StackNavigationViewStyle())
