@@ -18,6 +18,9 @@
 		573B9A8129068D8900F3B5E9 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 573B9A7E29068D8900F3B5E9 /* sound-rise.mp3 */; };
 		573B9A8E2906971600F3B5E9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573B9A8D2906971600F3B5E9 /* Constant.swift */; };
 		573B9A9029069E3300F3B5E9 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573B9A8F29069E3300F3B5E9 /* HideKeyboardExtension.swift */; };
+		573B9A922906ABC600F3B5E9 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573B9A912906ABC600F3B5E9 /* BackgroundImageView.swift */; };
+		573B9A942906ACB400F3B5E9 /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573B9A932906ACB400F3B5E9 /* NewTaskItemView.swift */; };
+		573B9A962906AFB200F3B5E9 /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573B9A952906AFB200F3B5E9 /* BlankView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		573B9A8829068DFB00F3B5E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		573B9A8D2906971600F3B5E9 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		573B9A8F29069E3300F3B5E9 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
+		573B9A912906ABC600F3B5E9 /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
+		573B9A932906ACB400F3B5E9 /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
+		573B9A952906AFB200F3B5E9 /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				573B9A6B29068D1A00F3B5E9 /* ContentView.swift */,
+				573B9A912906ABC600F3B5E9 /* BackgroundImageView.swift */,
+				573B9A932906ACB400F3B5E9 /* NewTaskItemView.swift */,
+				573B9A952906AFB200F3B5E9 /* BlankView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -215,8 +224,11 @@
 				573B9A6C29068D1A00F3B5E9 /* ContentView.swift in Sources */,
 				573B9A9029069E3300F3B5E9 /* HideKeyboardExtension.swift in Sources */,
 				573B9A8E2906971600F3B5E9 /* Constant.swift in Sources */,
+				573B9A962906AFB200F3B5E9 /* BlankView.swift in Sources */,
+				573B9A922906ABC600F3B5E9 /* BackgroundImageView.swift in Sources */,
 				573B9A7629068D1C00F3B5E9 /* Devote.xcdatamodeld in Sources */,
 				573B9A6A29068D1A00F3B5E9 /* DevoteApp.swift in Sources */,
+				573B9A942906ACB400F3B5E9 /* NewTaskItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
