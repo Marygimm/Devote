@@ -17,6 +17,7 @@
 		573B9A8029068D8900F3B5E9 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 573B9A7D29068D8900F3B5E9 /* sound-tap.mp3 */; };
 		573B9A8129068D8900F3B5E9 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 573B9A7E29068D8900F3B5E9 /* sound-rise.mp3 */; };
 		573B9A8E2906971600F3B5E9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573B9A8D2906971600F3B5E9 /* Constant.swift */; };
+		573B9A9029069E3300F3B5E9 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573B9A8F29069E3300F3B5E9 /* HideKeyboardExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		573B9A7E29068D8900F3B5E9 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 		573B9A8829068DFB00F3B5E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		573B9A8D2906971600F3B5E9 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		573B9A8F29069E3300F3B5E9 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		573B9A8429068DB700F3B5E9 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				573B9A8F29069E3300F3B5E9 /* HideKeyboardExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			files = (
 				573B9A7329068D1C00F3B5E9 /* Persistence.swift in Sources */,
 				573B9A6C29068D1A00F3B5E9 /* ContentView.swift in Sources */,
+				573B9A9029069E3300F3B5E9 /* HideKeyboardExtension.swift in Sources */,
 				573B9A8E2906971600F3B5E9 /* Constant.swift in Sources */,
 				573B9A7629068D1C00F3B5E9 /* Devote.xcdatamodeld in Sources */,
 				573B9A6A29068D1A00F3B5E9 /* DevoteApp.swift in Sources */,
