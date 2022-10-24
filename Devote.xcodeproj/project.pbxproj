@@ -16,6 +16,7 @@
 		573B9A7F29068D8900F3B5E9 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 573B9A7C29068D8900F3B5E9 /* sound-ding.mp3 */; };
 		573B9A8029068D8900F3B5E9 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 573B9A7D29068D8900F3B5E9 /* sound-tap.mp3 */; };
 		573B9A8129068D8900F3B5E9 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 573B9A7E29068D8900F3B5E9 /* sound-rise.mp3 */; };
+		573B9A8E2906971600F3B5E9 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573B9A8D2906971600F3B5E9 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		573B9A7D29068D8900F3B5E9 /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
 		573B9A7E29068D8900F3B5E9 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 		573B9A8829068DFB00F3B5E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		573B9A8D2906971600F3B5E9 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +66,10 @@
 			children = (
 				573B9A8829068DFB00F3B5E9 /* Info.plist */,
 				573B9A6929068D1A00F3B5E9 /* DevoteApp.swift */,
+				573B9A8329068DAB00F3B5E9 /* View */,
 				573B9A8729068DD800F3B5E9 /* Style */,
 				573B9A8529068DBE00F3B5E9 /* Utility */,
 				573B9A8429068DB700F3B5E9 /* Extension */,
-				573B9A8329068DAB00F3B5E9 /* View */,
 				573B9A8229068D9100F3B5E9 /* Sound */,
 				573B9A8629068DCC00F3B5E9 /* Model */,
 				573B9A6D29068D1C00F3B5E9 /* Assets.xcassets */,
@@ -112,6 +114,7 @@
 		573B9A8529068DBE00F3B5E9 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				573B9A8D2906971600F3B5E9 /* Constant.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			files = (
 				573B9A7329068D1C00F3B5E9 /* Persistence.swift in Sources */,
 				573B9A6C29068D1A00F3B5E9 /* ContentView.swift in Sources */,
+				573B9A8E2906971600F3B5E9 /* Constant.swift in Sources */,
 				573B9A7629068D1C00F3B5E9 /* Devote.xcdatamodeld in Sources */,
 				573B9A6A29068D1A00F3B5E9 /* DevoteApp.swift in Sources */,
 			);
